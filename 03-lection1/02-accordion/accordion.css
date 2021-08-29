@@ -1,12 +1,4 @@
 /* Стилизация аккордеона */
-summary {
-    display: block;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
 .accordion__item {
     background: var(--white);
     border: 1px solid var(--grey-3);
@@ -18,12 +10,17 @@ summary::-webkit-details-marker {
 }
 
 .accordion__summary {
+    display: block;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
+}
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
 }
 
 .accordion__content {
